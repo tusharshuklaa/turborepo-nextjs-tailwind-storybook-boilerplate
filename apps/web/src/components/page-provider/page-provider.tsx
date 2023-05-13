@@ -1,6 +1,6 @@
-import React, { FC } from 'react';
-import Head from 'next/head';
 import { ComponentWithChildren } from 'leafui';
+import Head from 'next/head';
+import React, { FC } from 'react';
 
 const SITE_TITLE = 'LEAF';
 

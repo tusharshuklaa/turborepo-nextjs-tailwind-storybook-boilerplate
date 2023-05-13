@@ -1,5 +1,5 @@
-import React from 'react'
 import { Button } from 'leafui'
+import React from 'react'
 
 const HelloWorld = () => (
   <>
@@ -7,7 +7,7 @@ const HelloWorld = () => (
     <label htmlFor="name">
       <input id="name" name="name" type="text" />
     </label>
-    <Button />
+    <Button>Hello</Button>
   </>
 )
 

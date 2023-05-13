@@ -1,6 +1,6 @@
 {
   "extends": "tsconfig/nextjs.json",
-  "include": ["."],
+  "include": ["./src/**/*.*"],
   "compilerOptions": {
     "sourceMap": true
   },
