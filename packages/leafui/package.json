@@ -10,8 +10,8 @@
     "./styles.css": "./dist/index.css"
   },
   "scripts": {
-    "build": "tsup",
-    "dev": "tsup --sourcemap --watch",
+    "build": "tsup src/index.ts",
+    "dev": "tsup src/index.ts --sourcemap --watch",
     "lint": "eslint \"src/**/*.ts*\"",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
   },
