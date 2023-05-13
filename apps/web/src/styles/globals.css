@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* FONTS */
+
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/Inter-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Inter-Medium;
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/Inter-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Inter-Bold;
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/Inter-Bold.ttf') format('truetype');
+}
+
+/* colors have rgb values without the 'rgb' text and parenthesis becaue it is being customized in tailwind.config.js */
+@layer base {
+  /* default light theme */
+  :root {
+    --color-accent: 0, 182, 199;
+    --color-background: 229, 240, 255;
+    --color-fill: 209, 232, 255;
+    --color-bg-button: transparent;
+    --color-bg-button-hover: 0, 182, 199;
+    --color-bg-tab: transparent;
+    --color-bg-tab-hover: 204, 232, 255;
+    --color-text-base: 82, 92, 122;
+    --color-text-heading: 61, 69, 92;
+    --color-text-article: 25, 45, 102;
+    --color-text-button: 255, 255, 255;
+    --color-edge: 198, 212, 236;
+  }
+
+  body {
+    background-color: rgb(var(--color-background));
+    color: rgb(var(--color-text-base));
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+[data-theme='dark'] {
+  --color-accent: 102, 255, 219;
+  --color-background: 10, 24, 46;
+  --color-fill: 17, 34, 64;
+  --color-bg-button: transparent;
+  --color-bg-button-hover: 100, 255, 218;
+  --color-bg-tab: transparent;
+  --color-bg-tab-hover: 17, 34, 64;
+  --color-text-base: 136, 146, 175;
+  --color-text-heading: 204, 214, 246;
+  --color-text-article: 168, 178, 209;
+  --color-text-button: 102, 255, 219;
+  --color-edge: 35, 52, 83;
+}
